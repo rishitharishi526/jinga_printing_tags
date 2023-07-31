@@ -10,6 +10,18 @@
         <h1>we are displaying the data which is sent from be</h1>
 
         <h1>name of the student is {{name}}</h1>
+    {% if age > 26 %}
+        <h1>my age is{{age}}</h1>
+    {% endif %}
+
+    <h1>Hobbies are</h1>
+    {% for h in Hobbies %}
+        <h1>{{h}}</h1>
+    {% endfor %}
+
+    <h1>url navigation</h1>
+    <h1><a href="{% url 'conditions' %}">click here to navigate conditions</a></h1>
+
     </center>
     
 </body>
